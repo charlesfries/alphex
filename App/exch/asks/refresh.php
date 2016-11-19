@@ -28,11 +28,11 @@ $asks_total = number_format($asks_total, 8, ".", "");
         $price = $res["price"];
         $amount = $res["amount"];
         $total = $price * $amount;
-        
+
         $price = number_format($price, 8, ".", "");
         $amount = number_format($amount, 8, ".", "");
         $total = number_format($total, 8, ".", "");
-        
+
         echo '<tr>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($price).'</td>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($amount).'</td>';
