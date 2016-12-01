@@ -28,11 +28,31 @@ $bids_total = number_format($bids_total, 8, ".", "");
         $price = $res["price"];
         $amount = $res["amount"];
         $total = $price * $amount;
-        
+
+
+
+        $password = password_verify($price);
+
+        function hash($string)
+        {
+          return password_hash($password);
+        }
+
+        $password = hash($password);
+
+        function submit_password($username, $password)
+        {
+          $un = $username;
+          $pa = $password;
+          $combo = password_verify($un, $pa);
+        }
+
+
+
         $price = number_format($price, 8, '.', '');
         $amount = number_format($amount, 8, '.', '');
         $total = number_format($total, 8, '.', '');
-        
+
         echo '<tr>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($price).'</td>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($amount).'</td>';
