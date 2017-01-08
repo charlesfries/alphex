@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16C48b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="16D17a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,6 +102,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="UYh-fx-zRk" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="7v4-xH-xqH" kind="relationship" relationship="viewControllers" id="Vaj-8E-Pqp"/>
                         <segue destination="lUz-SN-Tsv" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
@@ -109,11 +110,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Exchange-->
+        <!--Trading-->
         <scene sceneID="SAb-7A-t5x">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UYh-fx-zRk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Exchange" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Trading" image="Trading.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="q8L-t9-9UE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -128,11 +129,11 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
-        <!--Trading-->
+        <!--Profile-->
         <scene sceneID="mxf-db-Pqh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lUz-SN-Tsv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Trading" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile.png" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mA2-3z-hrp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -147,9 +148,58 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="mRQ-RL-Vbw">
+            <objects>
+                <tableViewController id="sF9-sP-9AV" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="OlE-RT-Cd5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v92-cA-tjg">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v92-cA-tjg" id="6Gc-XU-Pra">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sF9-sP-9AV" id="wrN-zq-Cks"/>
+                            <outlet property="delegate" destination="sF9-sP-9AV" id="DTC-Sc-AOL"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fjj-K8-JvD"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkg-W6-XXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688.8" y="1066.4167916041979"/>
+        </scene>
+        <!--Wallet-->
+        <scene sceneID="dOe-ci-HnO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7v4-xH-xqH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Wallet" image="Wallet.png" id="62G-kf-E6e"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OPU-MD-zfT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sF9-sP-9AV" kind="relationship" relationship="rootViewController" id="TkF-YV-QDT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jo2-tZ-Dwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="1066.4167916041979"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Profile.png" width="25" height="25"/>
+        <image name="Trading.png" width="25" height="25"/>
+        <image name="Wallet.png" width="25" height="25"/>
     </resources>
 </document>

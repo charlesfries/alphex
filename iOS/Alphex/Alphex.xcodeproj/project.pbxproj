@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776147A41E21CBCD00413021 /* Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A31E21CBCD00413021 /* Text.png */; };
+		776147A61E21CC8200413021 /* Trading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A51E21CC8200413021 /* Trading@2x.png */; };
+		776147A81E21CCBF00413021 /* Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A71E21CCBF00413021 /* Profile@2x.png */; };
+		776147AA1E21CD6400413021 /* Wallet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A91E21CD6400413021 /* Wallet@2x.png */; };
 		7773F9211DBCC20300D4B5AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773F9201DBCC20300D4B5AA /* AppDelegate.swift */; };
 		7773F9231DBCC20300D4B5AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773F9221DBCC20300D4B5AA /* FirstViewController.swift */; };
 		7773F9251DBCC20300D4B5AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7773F9241DBCC20300D4B5AA /* SecondViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		776147A31E21CBCD00413021 /* Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Text.png; sourceTree = "<group>"; };
+		776147A51E21CC8200413021 /* Trading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trading@2x.png"; sourceTree = "<group>"; };
+		776147A71E21CCBF00413021 /* Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@2x.png"; sourceTree = "<group>"; };
+		776147A91E21CD6400413021 /* Wallet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wallet@2x.png"; sourceTree = "<group>"; };
 		7773F91D1DBCC20300D4B5AA /* Alphex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alphex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7773F9201DBCC20300D4B5AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7773F9221DBCC20300D4B5AA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +71,10 @@
 				7773F9291DBCC20300D4B5AA /* Assets.xcassets */,
 				7773F92B1DBCC20300D4B5AA /* LaunchScreen.storyboard */,
 				7773F92E1DBCC20300D4B5AA /* Info.plist */,
+				776147A31E21CBCD00413021 /* Text.png */,
+				776147A51E21CC8200413021 /* Trading@2x.png */,
+				776147A71E21CCBF00413021 /* Profile@2x.png */,
+				776147A91E21CD6400413021 /* Wallet@2x.png */,
 			);
 			path = Alphex;
 			sourceTree = "<group>";
@@ -127,7 +139,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776147A41E21CBCD00413021 /* Text.png in Resources */,
+				776147AA1E21CD6400413021 /* Wallet@2x.png in Resources */,
 				7773F92D1DBCC20300D4B5AA /* LaunchScreen.storyboard in Resources */,
+				776147A61E21CC8200413021 /* Trading@2x.png in Resources */,
+				776147A81E21CCBF00413021 /* Profile@2x.png in Resources */,
 				7773F92A1DBCC20300D4B5AA /* Assets.xcassets in Resources */,
 				7773F9281DBCC20300D4B5AA /* Main.storyboard in Resources */,
 			);

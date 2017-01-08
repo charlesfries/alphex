@@ -8,6 +8,22 @@
 
 import UIKit
 
+class Car
+{
+    var year: Int!
+    
+    init(name: String)
+    {
+        print("Object made")
+    }
+    
+    
+    func go()
+    {
+        print("Going")
+    }
+}
+
 class FirstViewController: UIViewController
 {
     override func viewDidLoad()
@@ -22,5 +38,10 @@ class FirstViewController: UIViewController
         
         let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
+        
+        let lexus = Car(name:"Lexus")
+        print(lexus)
+        lexus.go()
+        lexus.year = 2007
     }
 }

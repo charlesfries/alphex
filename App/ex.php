@@ -1,5 +1,5 @@
 <?php
-if (!isset($_GET["a"]) || !isset($_GET["b"])) header("location: exchange?a=btc&b=eth");
+if (!isset($_GET["a"]) || !isset($_GET["b"])) header("location: ex?a=btc&b=eth");
 
 require("global.php");
 $tab = "Exchange";
