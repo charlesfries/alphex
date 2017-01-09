@@ -40,11 +40,11 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
         <div class="col-sm-3">
           <?php include("_trading/markets/main.php"); ?>
           <br>
-          <?php include("_trading/overview.php"); ?>
+          <?php include("_trading/open_orders/main.php"); ?>
           <br>
-          <?php include("_trading/positions/main.php"); ?>
+          <?php include("_trading/balances/main.php"); ?>
           <br>
-          <?php include("_trading/main.php"); ?>
+          <?php include("chat/main.php"); ?>
         </div>
       </div>
 		</div>
