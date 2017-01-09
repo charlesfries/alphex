@@ -12,7 +12,7 @@ $tab = "";
     <?php include("templates/navbar.php"); ?>
     <div class="container pb-0">
       <br>
-      <h3 class="fancy mb-0">Terms of Use</h3>
+      <h2 class="fancy mb-0">Terms of Use</h2>
       <br>
       <p><b>Last Revised: December 19, 2016</b></p>
       <p>By accessing or using the Alphex website located at https://alphex.co (the “Site”) and any services made available through the Site (collectively, the “Services”), you (“User”) agree to be bound by these Terms of Use (“Terms”). The Services are owned and controlled by Alphex, Inc., a Delaware corporation (“Alphex”), and the terms “we,” “us,” and “our” refer to Alphex, Inc. These Terms affect your legal rights and obligations. If you do not agree to be bound by these Terms, do not access or use the Services.</p>

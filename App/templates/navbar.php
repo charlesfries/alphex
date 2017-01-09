@@ -12,12 +12,6 @@ function resolve_tab($tably)
   <ul class="nav navbar-nav">
     <li class="nav-item<?=resolve_tab("Trading")?>"><a class="nav-link" href="/trading">Trading</a></li>
     <li class="nav-item<?=resolve_tab("Lending")?>"><a class="nav-link" href="/lending">Lending</a></li>
-    <li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/wallet">Wallet</a></li>
-    <li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/explorer">Explorer</a></li>
-
-    <!--<li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/exchange">Exchange</a></li>
-    <li class="nav-item<?=resolve_tab("Trading")?>"><a class="nav-link" href="/trading">Trading</a></li>
-    <li class="nav-item<?=resolve_tab("Funding")?>"><a class="nav-link" href="/funding">Funding</a></li>-->
   </ul>
   <ul class="nav navbar-nav float-xs-right">
     <?php

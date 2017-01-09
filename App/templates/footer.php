@@ -33,12 +33,11 @@ $ltc_online = 1287;
   		<div class="col-sm-2">
 				<ul class="footer-ul">
 					<li><h6 class="fancy">Company</h6></li>
-          <li><a href="/company">About</a></li>
-          <li><a href="/company">Careers</a></li>
+          <li><a href="/company">Contact Us</a></li>
           <li><a href="/company">Press</a></li>
-					<li><a href="/legal">Legal & Privacy</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="/company">Fees</a></li>
+					<li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
 				</ul>
 			</div>
       <div class="col-sm-1"></div>

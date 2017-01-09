@@ -30,13 +30,13 @@ $tab = "";
         <div class="col-sm-3">
           <center>
             <h4 class="fancy"><i class="fa fa-globe"></i> Global</h4>
-            <p>Trade the major financial markets from anywhere in the world using first-class tools. <a href="#">Our markets &raquo;</a></p>
+            <p>Trade the major financial markets from anywhere in the world using first-class tools. <a href="/trading">Our markets &raquo;</a></p>
           </center>
         </div>
         <div class="col-sm-3">
           <center>
             <h4 class="fancy"><i class="fa fa-lock"></i> Secure</h4>
-            <p>100% cold storage, 2FA, and encryption keep customer funds safe. <a href="#">Learn more &raquo;</a></p>
+            <p>100% cold storage, 2FA, and encryption keep customer funds safe. <a href="/privacy">Learn more &raquo;</a></p>
           </center>
         </div>
         <div class="col-sm-3">
@@ -48,7 +48,7 @@ $tab = "";
         <div class="col-sm-3">
           <center>
             <h4 class="fancy"><i class="fa fa-shield"></i> Trusted</h4>
-            <p>Over 10,000 traders use Alphex to trade the financial markets using soley decentralized assets.</p>
+            <p>Professionals use Alphex to trade the financial markets using soley decentralized assets.</p>
           </center>
         </div>
       </div>
