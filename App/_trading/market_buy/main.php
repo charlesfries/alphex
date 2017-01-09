@@ -34,12 +34,12 @@ function market_buy_total()
 }
 
 $("#market_buy_price").on("input", function()
-{ 
+{
     market_buy_total()
 });
 
 $("#market_buy_amount").on("input", function()
-{ 
+{
     market_buy_total()
 });
 
@@ -48,12 +48,12 @@ $("#market_buy_alert").fadeOut();
 $("#market_buy").submit(function(e)
 {
   $("#market_buy_alert").fadeIn()
-  
+
   var data = "price=" + $("#market_buy_price").val() + "&amount=" + $("#market_buy_amount").val();
-  
+
   $.ajax({
     type: "POST",
-    url: "/trad/market_buy/order.php?a=<?=htmlspecialchars($coin_1)?>&b=<?=htmlspecialchars($coin_2)?>",
+    url: "/_trading/market_buy/order.php?a=<?=htmlspecialchars($coin_1)?>&b=<?=htmlspecialchars($coin_2)?>",
     data: data,
     success: function(data)
     {
@@ -67,13 +67,13 @@ $("#market_buy").submit(function(e)
         document.getElementById("market_buy_amount").value = "";
         document.getElementById("market_buy_total").value = "";
       }
-      
+
       document.getElementById("market_buy_alert").innerHTML = resp_mess;
     }
   });
 
   e.preventDefault();
-  
+
   setTimeout(function()
   {
    $("#market_buy_alert").fadeOut();

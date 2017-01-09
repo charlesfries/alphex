@@ -48,12 +48,12 @@ $("#limit_sell_alert").fadeOut();
 $("#limit_sell").submit(function(e)
 {
   $("#limit_sell_alert").fadeIn()
-  
+
   var data = "price=" + $("#limit_sell_price").val() + "&amount=" + $("#limit_sell_amount").val();
-  
+
   $.ajax({
     type: "POST",
-    url: "/trad/limit_sell/order.php?a=<?=htmlspecialchars($coin_1)?>&b=<?=htmlspecialchars($coin_2)?>",
+    url: "/_trading/limit_sell/order.php?a=<?=htmlspecialchars($coin_1)?>&b=<?=htmlspecialchars($coin_2)?>",
     data: data,
     success: function(data)
     {
@@ -67,13 +67,13 @@ $("#limit_sell").submit(function(e)
         document.getElementById("limit_sell_amount").value = "";
         document.getElementById("limit_sell_total").value = "";
       }
-      
+
       document.getElementById("limit_sell_alert").innerHTML = resp_mess;
     }
   });
 
   e.preventDefault();
-  
+
   setTimeout(function()
   {
    $("#limit_sell_alert").fadeOut();

@@ -10,7 +10,7 @@ refresh_markets();
 
 function refresh_markets()
 {
-  $("#markets_table").load("/trad/markets/retrieve.php?a=<?=htmlspecialchars($_GET["a"])?>&b=<?=htmlspecialchars($_GET["b"])?>", function() {
+  $("#markets_table").load("/_trading/markets/retrieve.php?a=<?=htmlspecialchars($_GET["a"])?>&b=<?=htmlspecialchars($_GET["b"])?>", function() {
     setTimeout(refresh_markets, 1000);
   });
 }

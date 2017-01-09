@@ -15,10 +15,10 @@ refresh_asks();
 function refresh_asks()
 {
   var asks_cb = document.getElementById("asks_throttle");
-  
+
   var asks_delay = (asks_cb.checked) ? document.getElementById("asks_throttle_int").value * 1000 : 100;
-  
-  $("#asks_table").load("/trad/asks/refresh.php?a=<?=htmlspecialchars($_GET["a"])?>&b=<?=htmlspecialchars($_GET["b"])?>", function()
+
+  $("#asks_table").load("/_trading/asks/refresh.php?a=<?=htmlspecialchars($_GET["a"])?>&b=<?=htmlspecialchars($_GET["b"])?>", function()
   {
     setTimeout(refresh_asks, asks_delay);
   });

@@ -15,10 +15,10 @@ retrieve_trades();
 function retrieve_trades()
 {
   var trades_cb = document.getElementById("trades_throttle")
-  
+
   var trades_delay = (trades_cb.checked) ? document.getElementById("trades_throttle_int").value * 1000 : 100;
-  
-  $("#trades_table").load("/trad/trades/refresh.php?a=<?=htmlspecialchars($_GET["a"])?>&b=<?=htmlspecialchars($_GET["b"])?>", function()
+
+  $("#trades_table").load("/_trading/trades/refresh.php?a=<?=htmlspecialchars($_GET["a"])?>&b=<?=htmlspecialchars($_GET["b"])?>", function()
   {
     setTimeout(retrieve_trades, trades_delay);
   });
