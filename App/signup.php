@@ -7,7 +7,7 @@ if ($_POST["submit"])
 	$email = $_POST["email"];
 	$password = $_POST["password"];
 	$username = $_POST["username"];
-	
+
 	if (empty($email) || empty($password) || empty($username))
   {
 		$alert = '<p class="text-danger">All fields must be filled out.</p>';
@@ -31,20 +31,20 @@ if ($_POST["submit"])
       else
       {
 				$password = password_hash($password, PASSWORD_DEFAULT);
-				
+
 				$sql = $db->prepare("INSERT INTO users (email, password, username) VALUES (?, ?, ?)");
 				$sql->execute([$email, $password, $username]);
-				
+
 		    $ip_address = $_SERVER["REMOTE_ADDR"];
-				
+
 				$sql = $db->prepare("INSERT INTO logins (username, ip_address) VALUES (?, ?)");
 		    $sql->execute([$username, $ip_address]);
-				
+
         $_SESSION["authenticated_user"] = $username;
-				
+
         header("location: /");
-      } 
-    } 
+      }
+    }
 	}
 }
 ?>
@@ -66,13 +66,13 @@ if ($_POST["submit"])
           <?=$alert?>
           <form action="" method="post">
             <fieldset class="form-group">
-              <input name="email" type="email" class="form-control" placeholder="Email" value="<?=htmlspecialchars($_POST["email"])?>" autofocus>
+              <input name="email" value="<?=htmlspecialchars($_POST["email"])?>" placeholder="Email" type="email" class="form-control" autofocus>
             </fieldset>
             <fieldset class="form-group">
-              <input name="password" type="password" class="form-control" placeholder="Password">
+              <input name="password" placeholder="Password" type="password" class="form-control">
             </fieldset>
             <fieldset class="form-group">
-              <input name="username" type="text" class="form-control" value="<?=htmlspecialchars($_POST["username"])?>" placeholder="Username">
+              <input name="username" value="<?=htmlspecialchars($_POST["username"])?>" placeholder="Username" type="text" class="form-control">
             </fieldset>
             <fieldset class="form-group">
               <input name="submit" type="submit" value="Sign Up" class="btn btn-primary">
@@ -85,7 +85,7 @@ if ($_POST["submit"])
           <a href="/signin" class="btn btn-primary" role="button">Sign In</a>
         </div>
       </div>
-      
+
 		</div>
     <?php include("templates/footer.php"); ?>
   </body>

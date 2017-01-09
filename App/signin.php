@@ -15,10 +15,10 @@ if ($_POST["sign_in"])
   {
     $username = $res["username"];
     $ip_address = $_SERVER["REMOTE_ADDR"];
-    
+
     $sql = $db->prepare("INSERT INTO logins (username, ip_address) VALUES (?, ?)");
     $sql->execute([$username, $ip_address]);
-    
+
     $_SESSION["authenticated_user"] = $username;
     header("location: /");
   }
@@ -42,10 +42,10 @@ if ($_POST["sign_in"])
           <?=$sign_in_alert?>
           <form action="" method="post">
             <fieldset class="form-group">
-              <input name="email" type="email" class="form-control" placeholder="Email" value="<?=htmlspecialchars($_POST["email"])?>" autofocus>
+              <input name="email" value="<?=htmlspecialchars($_POST["email"])?>" placeholder="Email" type="email" class="form-control" autofocus>
             </fieldset>
             <fieldset class="form-group">
-              <input name="password" type="password" class="form-control" placeholder="Password">
+              <input name="password" placeholder="Password" type="password" class="form-control">
               <small class="form-text text-muted"><a href="#">Forgot your password?</a></small>
             </fieldset>
             <fieldset class="form-group">
