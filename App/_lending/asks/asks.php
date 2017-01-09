@@ -2,4 +2,4 @@
 <h5 class="fancy">Asks</h5>
 <div id="sell_orders"></div>
 <?php include("templates/throttle.php"); ?>
-<script src="/fund/asks/asks.js"></script>
+<script src="/_lending/asks/asks.js"></script>

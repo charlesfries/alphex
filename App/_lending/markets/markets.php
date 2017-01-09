@@ -4,7 +4,7 @@
 retrieve_markets();
 
 function retrieve_markets() {
-  $("#markets_table").load("/fund/markets/refresh.php?a=<?=htmlspecialchars($_GET["a"])?>", function() {
+  $("#markets_table").load("/_lending/markets/refresh.php?a=<?=htmlspecialchars($_GET["a"])?>", function() {
     setTimeout(retrieve_markets, 250);
   });
 }

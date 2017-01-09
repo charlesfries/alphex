@@ -30,15 +30,15 @@ $("#offer_loan_alert").fadeOut();
 $("#offer_loan").submit(function(e)
 {
   $("#offer_loan_alert").fadeIn()
-  
+
   var data = "rate=" + $("#offer_loan_rate").val() + "&amount=" + $("#offer_loan_amount").val() + "&duration=" + $("#offer_loan_duration").val();
-  
+
   $.ajax({
     type: "POST",
-    url: "/fund/offer/order.php?a=<?=htmlspecialchars($coin)?>",
+    url: "/_lending/offer/order.php?a=<?=htmlspecialchars($coin)?>",
     data: data,
     success: function(data) {
-      
+
       var response = JSON.parse(data);
       var resp_cond = response.condition;
       var resp_mess = response.message;
@@ -49,13 +49,13 @@ $("#offer_loan").submit(function(e)
         document.getElementById("limit_buy_amount").value = "";
         document.getElementById("limit_buy_duration").value = "";
       }
-      
+
       document.getElementById("offer_loan_alert").innerHTML = resp_mess;
     }
   });
 
   e.preventDefault();
-  
+
   setTimeout(function()
   {
    $("#offer_loan_alert").fadeOut();

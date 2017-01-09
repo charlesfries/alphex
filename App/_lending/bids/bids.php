@@ -3,4 +3,4 @@
 <div id="bids_table"></div>
 <?php include("templates/throttle.php"); ?>
 
-<script src="/fund/bids/bids.js"></script>
+<script src="/_lending/bids/bids.js"></script>
