@@ -40,8 +40,10 @@
 
         $active = $res["symbol"] == strtoupper($coin) ? ' class="table-active"' : '';
 
+        $checked = ($res["symbol"] == "ETH" || $res["symbol"] ==  "XMR") ? ' checked' : '';
+
         echo '<tr'.$active.'>';
-        echo '<td nowrap><input type="checkbox"></td>';
+        echo '<td nowrap><input type="checkbox"'.$checked.'></td>';
         echo '<td nowrap><a href="?a='.htmlspecialchars(strtolower(strtolower($res["symbol"]))).'">'.htmlspecialchars($res["symbol"]).'</a></td>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($price).'</td>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($volume).'</td>';

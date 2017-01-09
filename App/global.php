@@ -1,15 +1,17 @@
 <?php
-
 require("config.php");
 
 date_default_timezone_set("UTC");
 
 session_start();
 
-try {
+try
+{
   $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $e) {
+}
+catch (PDOException $e)
+{
   echo "Cannot connect to database.";
 	exit;
 }
@@ -32,10 +34,10 @@ function time_elapsed($datetime, $full = false)
 	$now = new DateTime;
 	$ago = new DateTime($datetime);
 	$diff = $now->diff($ago);
-	
+
 	$diff->w = floor($diff->d / 7);
 	$diff->d -= $diff->w * 7;
-	
+
 	$string = [
 		"y" => "year",
 		"m" => "month",
@@ -45,7 +47,7 @@ function time_elapsed($datetime, $full = false)
 		"i" => "minute",
 		"s" => "second",
 	];
-  
+
 	foreach ($string as $k => &$v)
   {
 		if ($diff->$k)
@@ -57,9 +59,8 @@ function time_elapsed($datetime, $full = false)
 			unset($string[$k]);
 		}
 	}
-	
+
 	if (!$full) $string = array_slice($string, 0, 1);
 	return $string ? implode(", ", $string) . " ago" : "just now";
 }
-
 ?>

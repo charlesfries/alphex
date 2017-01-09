@@ -18,7 +18,7 @@ $tab = "";
           <p class="lead">The ultimate securities trading platform. We are a cryptocurrency exchange built online, offering maximum security and advanced trading features. Trade any leading blockchain asset for any other.</p>
           <hr class="m-y-2">
           <p>Start trading today on the safest, fastest asset exchange in the world.</p>
-          <p class="lead"><a class="btn btn-warning btn-lg" href="/exchange" role="button">Explore markets &rarr;</a></p>
+          <p class="lead"><a class="btn btn-warning btn-lg" href="/trading" role="button">Explore markets &rarr;</a></p>
         </center>
         <br><br>
       </div>

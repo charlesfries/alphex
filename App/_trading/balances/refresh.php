@@ -14,13 +14,13 @@ require("../../global.php");
   </thead>
   <tbody>
     <tr>
-      <th>BTC</th>
+      <td>BTC</td>
       <td>0.00000000</td>
       <td>0.00000000</td>
       <td>0.00000000</td>
     </tr>
     <tr>
-      <th>ETH</th>
+      <td>ETH</td>
       <td>0.00000000</td>
       <td>0.00000000</td>
       <td>0.00000000</td>
