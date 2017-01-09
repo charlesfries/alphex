@@ -18,8 +18,8 @@ $tab = "Wallet";
       </ul>
       <br>
       <div class="tab-content">
-        <div class="tab-pane active" id="balances" role="tabpanel"><?php include("wall/balances.php"); ?></div>
-        <div class="tab-pane" id="history" role="tabpanel"><?php include("wall/history.php"); ?></div>
+        <div class="tab-pane active" id="balances" role="tabpanel"><?php include("_wallet/balances.php"); ?></div>
+        <div class="tab-pane" id="history" role="tabpanel"><?php include("_wallet/history.php"); ?></div>
       </div>
 		</div>
     <?php include("templates/footer.php"); ?>

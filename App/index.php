@@ -10,7 +10,6 @@ $tab = "";
   </head>
   <body>
     <?php include("templates/navbar.php"); ?>
-    
     <div class="jumbotron mb-0">
       <div class="container">
         <br><br>
@@ -24,45 +23,9 @@ $tab = "";
         <br><br>
       </div>
     </div>
-    
-    <div id="ticker-"></div>
-
-    <script>
-    var tWidth = '1800px'; // width (in pixels)
-    var tHeight = '60px'; // height (in pixels)
-    var tcolour = '#2D2E2F'; // background colour:
-    var moStop = true; // pause on mouseover (true or false)
-    var tSpeed = 3; // scroll speed (1 = slow, 5 = fast)
-    // enter your ticker content here (use \/ and \' in place of / and ' respectively)
-    var content = 'ETH/BTC: 0.01958743 &nbsp; &nbsp; &nbsp; &nbsp; XMR/BTC: 0.01958743 &nbsp; &nbsp; &nbsp; &nbsp; MAID/BTC: 0.01958743 &nbsp; &nbsp; &nbsp; &nbsp; LTC/BTC: 0.01958743';
-
-    var cps = -tSpeed;
-    var aw, mq;
-    var fsz = 20; //parseInt(tHeight) - 4;
-
-    function scrollticker() {
-        mq.style.right = (parseInt(mq.style.right) > (-10 - aw)) ? mq.style.right = parseInt(mq.style.right) + cps + "px" : parseInt(tWidth) + 10 + "px";
-    }
-
-    function startticker() {
-        if (document.getElementById) {
-            var tick = '<div style="position:relative;width:' + tWidth + ';height:' + tHeight + ';overflow:hidden;background-color:' + tcolour + '"';
-            if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"';
-            tick += '><div class="pt-1" id="mq" style="position:absolute;right:0px;top:0px;font-size:' + fsz + 'px;white-space:nowrap;"><\/div><\/div>';
-            document.getElementById('ticker').innerHTML = tick;
-            mq = document.getElementById("mq");
-            mq.style.right = (10 + parseInt(tWidth)) + "px";
-            mq.innerHTML = '<span style="color:white;" class="fancy" id="tx">' + content + '<\/span>';
-            aw = document.getElementById("tx").offsetWidth;
-            lefttime = setInterval(scrollticker, 35);
-        }
-    }
-    startticker();
-    </script>
     <br>
     <div class="container">
       <br>
-      
       <div class="row">
         <div class="col-sm-3">
           <center>
@@ -121,7 +84,6 @@ $tab = "";
       </div>
 		  <br>
     </div>
-    
     <?php include("templates/footer.php"); ?>
   </body>
 </html>
