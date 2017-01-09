@@ -1,7 +1,3 @@
-<ul class="nav nav-tabs">
-  <li class="nav-item"><a class="nav-link active" href="?a=eth">BTC</a></li>
-</ul>
-<br>
 <h5 class="fancy">Markets</h5>
 <div id="markets_table"></div>
 

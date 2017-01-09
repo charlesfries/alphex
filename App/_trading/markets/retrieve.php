@@ -2,7 +2,7 @@
   <table class="table table-sm table-hover microprint mb-0">
     <thead>
       <tr>
-        <th nowrap></th>
+        <th nowrap><i class="fa fa-random"></i></th>
         <th nowrap>Coin</th>
         <th nowrap>Price</th>
         <th nowrap>Volume</th>

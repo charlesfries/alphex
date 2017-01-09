@@ -19,9 +19,9 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-9">
-          <?php include("chart/main.php"); ?>
+          <?php include("_trading/chart/main.php"); ?>
           <br>
-          <?php include("trad/alert/main.php"); ?>
+          <?php include("_trading/alert/main.php"); ?>
           <div class="row mb-0">
             <div class="col-sm-3"><?php include("_trading/limit_buy/main.php"); ?></div>
             <div class="col-sm-3"><?php include("_trading/market_buy/main.php"); ?></div>

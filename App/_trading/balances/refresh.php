@@ -7,20 +7,20 @@ require("../../global.php");
     <tr>
       <th nowrap>Coin</th>
       <th nowrap>Trading</th>
-      <th nowrap>Funding</th>
+      <th nowrap>Lending</th>
       <th nowrap>Wallet</th>
       <th nowrap></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>BTC</td>
+      <th>BTC</th>
       <td>0.00000000</td>
       <td>0.00000000</td>
       <td>0.00000000</td>
     </tr>
     <tr>
-      <td>ETH</td>
+      <th>ETH</th>
       <td>0.00000000</td>
       <td>0.00000000</td>
       <td>0.00000000</td>

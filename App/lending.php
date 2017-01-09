@@ -12,7 +12,7 @@ $coin_balance_str = number_format($coin_balance, 8, ".", "");
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Funding - Alphex</title>
+    <title>Lending - Alphex</title>
     <?php include("templates/head.php"); ?>
   </head>
   <body>
