@@ -24,12 +24,21 @@ $coin_2_balance_str = number_format($coin_2_balance, 8, ".", "");
     <div class="container-fluid">
       <br>
       <div class="row">
-        <div class="col-sm-2">
-          <?php include("act.php"); ?>
+        <div class="col-sm-3">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 class="fancy">BTC/ETH</h5>
+              <hr class="mt-0">
+            </div>
+            <div class="col-sm-8">
+              <?php include("act.php"); ?>
+            </div>
+          </div>
           <br>
-          <?php include("trad/markets/main.php"); ?>
+          <?php include("exch/open_orders/main.php"); ?>
+          <!-- <?php include("trad/markets/main.php"); ?> -->
         </div>
-        <div class="col-sm-10">
+        <div class="col-sm-9">
           <?php include("chart/main.php"); ?>
           <br>
           <?php include("exch/alert/main.php"); ?>

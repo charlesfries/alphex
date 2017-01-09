@@ -1,7 +1,7 @@
 <h5 class="fancy">Chat</h5>
 <?php
 if ($authenticated) {
-  ?>
+?>
 <hr class="mt-0">
 <?=$alert?>
 <form id="chat_form">

@@ -6,11 +6,17 @@ function resolve_tab($tably)
 }
 ?>
 <nav class="navbar navbar-dark bg-primary navbar-full">
-  <a class="navbar-brand" href="/">Alphex</a>
+  <a class="navbar-brand" href="/">
+    <img src="/img/logo.png" height="22" class="d-inline-block align-top" style="margin-top:5px">
+  </a>
   <ul class="nav navbar-nav">
-    <li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/exchange">Exchange</a></li>
     <li class="nav-item<?=resolve_tab("Trading")?>"><a class="nav-link" href="/trading">Trading</a></li>
-    <li class="nav-item<?=resolve_tab("Funding")?>"><a class="nav-link" href="/funding">Funding</a></li>
+    <li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/wallet">Wallet</a></li>
+    <li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/explorer">Explorer</a></li>
+
+    <!--<li class="nav-item<?=resolve_tab("Exchange")?>"><a class="nav-link" href="/exchange">Exchange</a></li>
+    <li class="nav-item<?=resolve_tab("Trading")?>"><a class="nav-link" href="/trading">Trading</a></li>
+    <li class="nav-item<?=resolve_tab("Funding")?>"><a class="nav-link" href="/funding">Funding</a></li>-->
   </ul>
   <ul class="nav navbar-nav float-xs-right">
     <?php
@@ -29,6 +35,3 @@ function resolve_tab($tably)
     ?>
   </ul>
 </nav>
-<div id="targetElement">
-  
-</div>

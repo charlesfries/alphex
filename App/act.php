@@ -1,4 +1,4 @@
-<h5 class="fancy">BTC/ETH</h5>
+<h5 class="fancy">Order Form</h5>
 <hr class="mt-0">
 <form>
   <div class="form-group">

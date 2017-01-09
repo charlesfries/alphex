@@ -23,28 +23,28 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
           <br>
           <?php include("trad/alert/main.php"); ?>
           <div class="row mb-0">
-            <div class="col-sm-3"><?php include("trad/limit_buy/main.php"); ?></div>
-            <div class="col-sm-3"><?php include("trad/market_buy/main.php"); ?></div>
-            <div class="col-sm-3"><?php include("trad/limit_sell/main.php"); ?></div>
-            <div class="col-sm-3"><?php include("trad/market_sell/main.php"); ?></div>
+            <div class="col-sm-3"><?php include("_trading/limit_buy/main.php"); ?></div>
+            <div class="col-sm-3"><?php include("_trading/market_buy/main.php"); ?></div>
+            <div class="col-sm-3"><?php include("_trading/limit_sell/main.php"); ?></div>
+            <div class="col-sm-3"><?php include("_trading/market_sell/main.php"); ?></div>
           </div>
           <br>
           <div class="row">
-            <div class="col-sm-4"><?php include("trad/bids/main.php"); ?></div>
-            <div class="col-sm-4"><?php include("trad/asks/main.php"); ?></div>
-            <div class="col-sm-4"><?php include("trad/trades/main.php"); ?></div>
+            <div class="col-sm-4"><?php include("_trading/bids/main.php"); ?></div>
+            <div class="col-sm-4"><?php include("_trading/asks/main.php"); ?></div>
+            <div class="col-sm-4"><?php include("_trading/trades/main.php"); ?></div>
           </div>
           <br>
-          <?php include("trad/depth.php"); ?>
+          <?php include("_trading/depth.php"); ?>
         </div>
         <div class="col-sm-3">
-          <?php include("trad/markets/main.php"); ?>
+          <?php include("_trading/markets/main.php"); ?>
           <br>
-          <?php include("trad/overview.php"); ?>
+          <?php include("_trading/overview.php"); ?>
           <br>
-          <?php include("trad/positions/main.php"); ?>
+          <?php include("_trading/positions/main.php"); ?>
           <br>
-          <?php include("chat/main.php"); ?>
+          <?php include("_trading/main.php"); ?>
         </div>
       </div>
 		</div>
