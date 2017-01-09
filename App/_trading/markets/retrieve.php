@@ -24,7 +24,8 @@
         $sql1 = $db->prepare("SELECT price, amount FROM trades WHERE coin_1=? OR coin_2=?");
         $sql1->execute([$res["symbol"], $res["symbol"]]);
         $volume = 0;
-        while ($res1 = $sql1->fetch()) {
+        while ($res1 = $sql1->fetch())
+        {
           $volume += $res1["price"] * $res1["amount"];
         }
 
