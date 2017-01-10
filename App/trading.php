@@ -17,6 +17,10 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
     <?php include("templates/navbar.php"); ?>
     <br>
     <div class="container-fluid">
+      <div class="alert alert-warning minilert mb-0" role="alert">
+        <strong>Notice!</strong> Alphex trading is in beta, but should be 100% up and running by mid to late January.
+      </div>
+      <br>
       <div class="row">
         <div class="col-sm-9">
           <?php include("_trading/chart/main.php"); ?>

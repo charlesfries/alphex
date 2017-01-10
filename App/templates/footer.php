@@ -13,8 +13,8 @@ $ltc_online = 1287;
 <br>
 <div class="footsy">
   <div class="container">
-    <div class="row-fluid">
-  		<div class="col-sm-2">
+    <div class="row">
+  		<div class="col-2">
 				<ul class="footer-ul">
 					<li><h6 class="fancy">Products</h6></li>
           <li><a href="#">Exchange</a></li>
@@ -23,14 +23,14 @@ $ltc_online = 1287;
           <li><a href="#">Finder</a></li>
 				</ul>
 			</div>
-  		<div class="col-sm-2">
+  		<div class="col-2">
 				<ul class="footer-ul">
 					<li><h6 class="fancy">Tools</h6></li>
 					<li><a href="#">API Docs</a></li>
 					<li><a href="#">Mobile App</a></li>
 				</ul>
 			</div>
-  		<div class="col-sm-2">
+  		<div class="col-2">
 				<ul class="footer-ul">
 					<li><h6 class="fancy">Company</h6></li>
           <li><a href="/company">Contact Us</a></li>
@@ -40,8 +40,8 @@ $ltc_online = 1287;
           <li><a href="/terms">Terms of Use</a></li>
 				</ul>
 			</div>
-      <div class="col-sm-1"></div>
-  		<div class="col-sm-5">
+      <div class="col-1"></div>
+  		<div class="col-5">
         <ul class="footer-ul">
           <li><img src="/img/logo.png" height="20"></li>
           <li>Server time: <?=htmlspecialchars($server_time)?></li>

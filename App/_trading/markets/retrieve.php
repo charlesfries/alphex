@@ -2,7 +2,6 @@
   <table class="table table-sm table-hover microprint mb-0">
     <thead>
       <tr>
-        <th nowrap><i class="fa fa-random"></i></th>
         <th nowrap>Coin</th>
         <th nowrap>Price</th>
         <th nowrap>Volume</th>
@@ -40,10 +39,7 @@
 
         $active = $res["symbol"] == strtoupper($coin) ? ' class="table-active"' : '';
 
-        $checked = ($res["symbol"] == "ETH" || $res["symbol"] ==  "XMR") ? ' checked' : '';
-
         echo '<tr'.$active.'>';
-        echo '<td nowrap><input type="checkbox"'.$checked.'></td>';
         echo '<td nowrap><a href="?a='.htmlspecialchars(strtolower(strtolower($res["symbol"]))).'">'.htmlspecialchars($res["symbol"]).'</a></td>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($price).'</td>';
         echo '<td nowrap class="align-right">'.htmlspecialchars($volume).'</td>';
