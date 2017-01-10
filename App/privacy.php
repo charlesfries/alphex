@@ -12,8 +12,8 @@ $tab = "";
     <?php include("templates/navbar.php"); ?>
     <div class="container pb-0">
       <br>
-      <h2 class="fancy mb-0">Privacy Policy</h2>
-      <br>
+      <h3 class="fancy">Privacy Policy</h3>
+      <hr>
       <p><b>Last Revised: December 20, 2016</b></p>
       <p>This Privacy Policy, as amended or otherwise changed from time to time (the “Privacy Policy”), explains the manner in which Alphex, Inc. (“Alphex”) collects, uses, maintains and discloses user information obtained through the Alphex.co website (the “Site”). The terms “we,” “us,” and “our” refer to Alphex, Inc. By using the Site, you (“User”) consent to the data practices prescribed in this Privacy Policy. On occasion, Alphex may revise this Privacy Policy to reflect changes in law, our personal data collection and use practices, the features on the Site, or advances in technology. If material changes are made to this Privacy Policy, the changes will be prominently posted on the Site. Capitalized terms not defined herein shall have the meanings ascribed to them in the Terms of Use.</p>
       <p>Please note: This Privacy Policy does not cover any information that we may receive about you through channels external to Alphex.</p>
