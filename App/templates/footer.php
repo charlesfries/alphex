@@ -43,7 +43,7 @@ $ltc_online = 1287;
       <div class="col-1"></div>
   		<div class="col-5">
         <ul class="footer-ul">
-          <li><img src="/img/logo.png" height="20"></li>
+          <li><img src="/img/logo.png" height="22"></li>
           <li>Server time: <?=htmlspecialchars($server_time)?></li>
 					<li>Users online: <?=htmlspecialchars($users_online)?></li>
 					<li>

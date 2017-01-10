@@ -46,7 +46,7 @@ if ($_POST["sign_in"])
             </fieldset>
             <fieldset class="form-group">
               <input name="password" placeholder="Password" type="password" class="form-control">
-              <small class="form-text text-muted"><a href="#">Forgot your password?</a></small>
+              <small class="form-text text-muted"><a href="/reset">Forgot your password?</a></small>
             </fieldset>
             <fieldset class="form-group">
               <input name="sign_in" type="submit" value="Sign In" class="btn btn-primary">
