@@ -35,20 +35,14 @@ function resolve_tab($tably)
           <li class="nav-item<?=resolve_tab("Lending")?>"><a class="nav-link" href="/lending">Lending</a></li>
         </ul>
         <ul class="nav navbar-nav float-xs-right">
-          <?php
-          if ($authenticated) {
-          ?>
+          <?php if ($authenticated) { ?>
           <li class="nav-item<?=resolve_tab("Wallet")?>"><a class="nav-link" href="/wallet">Wallet</a></li>
           <li class="nav-item<?=resolve_tab("Profile")?>"><a class="nav-link" href="/profile"><?=htmlspecialchars($authenticated_user)?></a></li>
           <li class="nav-item"><a class="nav-link" href="?signout=✓">Sign Out</a></li>
-          <?php
-          } else {
-          ?>
+          <?php } else { ?>
           <li class="nav-item<?=resolve_tab("Sign In")?>"><a class="nav-link" href="/signin">Sign In</a></li>
           <li class="nav-item<?=resolve_tab("Sign Up")?>"><a class="nav-link" href="/signup">Sign Up</a></li>
-          <?php
-          }
-          ?>
+          <?php } ?>
         </ul>
       </div>
     </nav>
