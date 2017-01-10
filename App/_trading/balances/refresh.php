@@ -1,7 +1,6 @@
 <?php
 require("../../global.php");
 ?>
-<h5 class="fancy">Balances</h5>
 <table class="table table-sm microprint mb-0">
   <thead>
     <tr>

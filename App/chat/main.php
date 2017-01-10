@@ -15,7 +15,24 @@ if ($authenticated) {
 <div id="chat_table"></div>
 
 <script>
+
+$(function()
+{
+  console.log("Ready!");
+});
+
 get_chat();
+
+function get_chat()
+{
+  $("#chat_table").on("load", "chat/refresh.php", function()
+  {
+    setTimeout(get_chat, 1000);
+  });
+}
+
+
+/*get_chat();
 
 function get_chat()
 {
@@ -23,7 +40,7 @@ function get_chat()
   {
     setTimeout(get_chat, 500);
   });
-}
+}*/
 
 $("#chat_form").submit(function(e)
 {

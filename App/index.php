@@ -2,8 +2,9 @@
 require("global.php");
 $title = "Alphex - Bitcoin/Cryptocurrency Exchange";
 $tab = "";
+
+include("templates/header.php");
 ?>
-<?php include("templates/header.php"); ?>
 <div class="jumbotron jumbotron-fluid mb-0">
   <div class="container">
     <br><br>
@@ -72,4 +73,6 @@ $tab = "";
   </div>
   <br>
 </div>
-<?php include("templates/footer.php"); ?>
+<?php
+include("templates/footer.php");
+?>

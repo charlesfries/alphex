@@ -7,8 +7,9 @@ $tab = "Trading";
 
 $coin_1 = $_GET["m"] ? $_GET["m"] : "BTC";
 $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
+
+include("templates/header.php");
 ?>
-<?php include("templates/header.php"); ?>
 <br>
 <div class="container-fluid">
   <div class="alert alert-warning minilert mb-0" role="alert">
@@ -40,12 +41,16 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
       <br>
       <?php include("_trading/markets/main.php"); ?>
       <br>
+      <h5 class="fancy">Open Orders</h5>
       <?php include("_trading/open_orders/main.php"); ?>
       <br>
+      <h5 class="fancy">Balances</h5>
       <?php include("_trading/balances/main.php"); ?>
-      <br>
-      <?php include("chat/main.php"); ?>
+      <!-- <br> -->
+      <!-- <?php include("chat/main.php"); ?> -->
     </div>
   </div>
 </div>
-<?php include("templates/footer.php"); ?>
+<?php
+include("templates/footer.php");
+?>

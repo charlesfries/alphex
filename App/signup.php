@@ -1,5 +1,6 @@
 <?php
 require("global.php");
+$title = "Sign Up - Alphex";
 $tab = "Sign Up";
 
 if ($_POST["submit"])
@@ -47,46 +48,39 @@ if ($_POST["submit"])
     }
 	}
 }
-?>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-		<title>Sign Up - Alphex</title>
-    <?php include("templates/head.php"); ?>
-  </head>
-  <body>
-    <?php include("templates/navbar.php"); ?>
-    <div class="container">
-      <br>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-          <h4 class="fancy">Sign Up</h4>
-					<hr class="mt-0">
-          <?=$alert?>
-          <form action="" method="post">
-            <fieldset class="form-group">
-              <input name="email" value="<?=htmlspecialchars($_POST["email"])?>" placeholder="Email" type="email" class="form-control" autofocus>
-            </fieldset>
-            <fieldset class="form-group">
-              <input name="password" placeholder="Password" type="password" class="form-control">
-            </fieldset>
-            <fieldset class="form-group">
-              <input name="username" value="<?=htmlspecialchars($_POST["username"])?>" placeholder="Username" type="text" class="form-control">
-            </fieldset>
-            <fieldset class="form-group">
-              <input name="submit" type="submit" value="Sign Up" class="btn btn-primary">
-            </fieldset>
-          </form>
-        </div>
-        <div class="col-sm-4">
-          <h4 class="fancy">Already have an account?</h4>
-					<hr class="mt-0">
-          <a href="/signin" class="btn btn-primary" role="button">Sign In</a>
-        </div>
-      </div>
 
-		</div>
-    <?php include("templates/footer.php"); ?>
-  </body>
-</html>
+include("templates/header.php");
+?>
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-4">
+      <h4 class="fancy">Sign Up</h4>
+			<hr class="mt-0">
+      <?=$alert?>
+      <form action="" method="post">
+        <fieldset class="form-group">
+          <input name="email" value="<?=htmlspecialchars($_POST["email"])?>" placeholder="Email" type="email" class="form-control" autofocus>
+        </fieldset>
+        <fieldset class="form-group">
+          <input name="password" placeholder="Password" type="password" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <input name="username" value="<?=htmlspecialchars($_POST["username"])?>" placeholder="Username" type="text" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <input name="submit" type="submit" value="Sign Up" class="btn btn-primary">
+        </fieldset>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <h4 class="fancy">Already have an account?</h4>
+			<hr class="mt-0">
+      <a href="/signin" class="btn btn-primary" role="button">Sign In</a>
+    </div>
+  </div>
+</div>
+<?php
+include("templates/footer.php");
+?>
