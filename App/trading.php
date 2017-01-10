@@ -22,7 +22,7 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
       </div>
       <br>
       <div class="row">
-        <div class="col-sm-9">
+        <div class="col-sm-10">
           <?php include("_trading/chart/main.php"); ?>
           <br>
           <?php include("_trading/alert/main.php"); ?>
@@ -41,7 +41,9 @@ $coin_2 = $_GET["c"] ? $_GET["c"] : "ETH";
           <br>
           <?php include("_trading/depth.php"); ?>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-2">
+          <?php include("_trading/order_form.php"); ?>
+          <br>
           <?php include("_trading/markets/main.php"); ?>
           <br>
           <?php include("_trading/open_orders/main.php"); ?>
