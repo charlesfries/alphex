@@ -46,8 +46,8 @@ include("templates/header.php");
       <br>
       <h5 class="fancy">Balances</h5>
       <?php include("_trading/balances/main.php"); ?>
-      <!-- <br> -->
-      <!-- <?php include("chat/main.php"); ?> -->
+      <br>
+      <?php include("chat/main.php"); ?>
     </div>
   </div>
 </div>

@@ -15,13 +15,28 @@ if ($authenticated) {
 <div id="chat_table"></div>
 
 <script>
+jQuery.noConflict();
+function get_chat()
+{
+    $.get("chat/refresh.php", function(data)
+    {
+         $("#chat_table").html(data);
+    });
+}
+
+get_chat();
+
+var it = setInterval(get_chat, 1000);
+
+
+
 
 $(function()
 {
   console.log("Ready!");
 });
 
-get_chat();
+/*get_chat();
 
 function get_chat()
 {
@@ -32,7 +47,7 @@ function get_chat()
 }
 
 
-/*get_chat();
+get_chat();
 
 function get_chat()
 {
