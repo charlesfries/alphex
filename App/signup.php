@@ -60,18 +60,41 @@ include("templates/header.php");
 			<hr class="mt-0">
       <?=$alert?>
       <form action="" method="post">
-        <fieldset class="form-group">
-          <input name="email" value="<?=htmlspecialchars($_POST["email"])?>" placeholder="Email" type="email" class="form-control" autofocus>
-        </fieldset>
-        <fieldset class="form-group">
+				<div class="form-group">
+          <input name="first_name" value="<?=htmlspecialchars($_POST["first_name"])?>" placeholder="First Name" type="text" class="form-control" autofocus>
+        </div>
+				<div class="form-group">
+          <input name="last_name" value="<?=htmlspecialchars($_POST["last_name"])?>" placeholder="Last Name" type="text" class="form-control">
+        </div>
+				<div class="form-group">
+			    <select name="country" class="form-control">
+			      <option>Country</option>
+			      <option>Canada</option>
+			      <option>United States</option>
+			    </select>
+			  </div>
+        <div class="form-group">
+          <input name="email" value="<?=htmlspecialchars($_POST["email"])?>" placeholder="Email" type="email" class="form-control">
+        </div>
+        <div class="form-group">
           <input name="password" placeholder="Password" type="password" class="form-control">
-        </fieldset>
-        <fieldset class="form-group">
+        </div>
+        <div class="form-group">
           <input name="username" value="<?=htmlspecialchars($_POST["username"])?>" placeholder="Username" type="text" class="form-control">
-        </fieldset>
-        <fieldset class="form-group">
+        </div>
+				<script src='https://www.google.com/recaptcha/api.js'></script>
+				<div class="form-group">
+					<div class="g-recaptcha" data-sitekey="6LcYjhEUAAAAADiUEKhlhrG998SWu1LBSkF0AN2V"></div>
+				</div>
+				<div class="form-group">
+			    <label class="form-check-label">
+			      <input type="checkbox" class="form-check-input">
+			      I agree to the <a href="/terms">Terms of Use</a>.
+			    </label>
+			  </div>
+        <div class="form-group">
           <input name="submit" type="submit" value="Sign Up" class="btn btn-primary">
-        </fieldset>
+        </div>
       </form>
     </div>
     <div class="col-sm-4">

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77090DBC1E2829020023FD7B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77090DBB1E2829020023FD7B /* UserNotifications.framework */; };
+		77090DBE1E2829020023FD7B /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77090DBD1E2829020023FD7B /* UserNotificationsUI.framework */; };
+		77090DC11E2829020023FD7B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77090DC01E2829020023FD7B /* NotificationViewController.swift */; };
+		77090DC41E2829020023FD7B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77090DC21E2829020023FD7B /* MainInterface.storyboard */; };
+		77090DC81E2829020023FD7B /* AlphexNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 77090DB91E2829020023FD7B /* AlphexNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		776147A41E21CBCD00413021 /* Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A31E21CBCD00413021 /* Text.png */; };
 		776147A61E21CC8200413021 /* Trading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A51E21CC8200413021 /* Trading@2x.png */; };
 		776147A81E21CCBF00413021 /* Profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 776147A71E21CCBF00413021 /* Profile@2x.png */; };
@@ -19,7 +24,37 @@
 		7773F92D1DBCC20300D4B5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7773F92B1DBCC20300D4B5AA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		77090DC61E2829020023FD7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7773F9151DBCC20200D4B5AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77090DB81E2829020023FD7B;
+			remoteInfo = AlphexNotificationContent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		77090DCC1E2829020023FD7B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				77090DC81E2829020023FD7B /* AlphexNotificationContent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		77090DB91E2829020023FD7B /* AlphexNotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AlphexNotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77090DBB1E2829020023FD7B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		77090DBD1E2829020023FD7B /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		77090DC01E2829020023FD7B /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		77090DC31E2829020023FD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		77090DC51E2829020023FD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776147A31E21CBCD00413021 /* Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Text.png; sourceTree = "<group>"; };
 		776147A51E21CC8200413021 /* Trading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Trading@2x.png"; sourceTree = "<group>"; };
 		776147A71E21CCBF00413021 /* Profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile@2x.png"; sourceTree = "<group>"; };
@@ -35,6 +70,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		77090DB61E2829020023FD7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77090DBE1E2829020023FD7B /* UserNotificationsUI.framework in Frameworks */,
+				77090DBC1E2829020023FD7B /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7773F91A1DBCC20200D4B5AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +89,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77090DBA1E2829020023FD7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77090DBB1E2829020023FD7B /* UserNotifications.framework */,
+				77090DBD1E2829020023FD7B /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77090DBF1E2829020023FD7B /* AlphexNotificationContent */ = {
+			isa = PBXGroup;
+			children = (
+				77090DC01E2829020023FD7B /* NotificationViewController.swift */,
+				77090DC21E2829020023FD7B /* MainInterface.storyboard */,
+				77090DC51E2829020023FD7B /* Info.plist */,
+			);
+			path = AlphexNotificationContent;
+			sourceTree = "<group>";
+		};
 		7773F9141DBCC20200D4B5AA = {
 			isa = PBXGroup;
 			children = (
 				7773F91F1DBCC20300D4B5AA /* Alphex */,
+				77090DBF1E2829020023FD7B /* AlphexNotificationContent */,
+				77090DBA1E2829020023FD7B /* Frameworks */,
 				7773F91E1DBCC20300D4B5AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7773F91D1DBCC20300D4B5AA /* Alphex.app */,
+				77090DB91E2829020023FD7B /* AlphexNotificationContent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +148,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		77090DB81E2829020023FD7B /* AlphexNotificationContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77090DCB1E2829020023FD7B /* Build configuration list for PBXNativeTarget "AlphexNotificationContent" */;
+			buildPhases = (
+				77090DB51E2829020023FD7B /* Sources */,
+				77090DB61E2829020023FD7B /* Frameworks */,
+				77090DB71E2829020023FD7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlphexNotificationContent;
+			productName = AlphexNotificationContent;
+			productReference = 77090DB91E2829020023FD7B /* AlphexNotificationContent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7773F91C1DBCC20200D4B5AA /* Alphex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7773F9311DBCC20300D4B5AA /* Build configuration list for PBXNativeTarget "Alphex" */;
@@ -89,10 +172,12 @@
 				7773F9191DBCC20200D4B5AA /* Sources */,
 				7773F91A1DBCC20200D4B5AA /* Frameworks */,
 				7773F91B1DBCC20200D4B5AA /* Resources */,
+				77090DCC1E2829020023FD7B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77090DC71E2829020023FD7B /* PBXTargetDependency */,
 			);
 			name = Alphex;
 			productName = Alphex;
@@ -105,10 +190,15 @@
 		7773F9151DBCC20200D4B5AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Charles Fries";
 				TargetAttributes = {
+					77090DB81E2829020023FD7B = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 48386QZ38R;
+						ProvisioningStyle = Automatic;
+					};
 					7773F91C1DBCC20200D4B5AA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 48386QZ38R;
@@ -130,11 +220,20 @@
 			projectRoot = "";
 			targets = (
 				7773F91C1DBCC20200D4B5AA /* Alphex */,
+				77090DB81E2829020023FD7B /* AlphexNotificationContent */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		77090DB71E2829020023FD7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77090DC41E2829020023FD7B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7773F91B1DBCC20200D4B5AA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +251,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		77090DB51E2829020023FD7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77090DC11E2829020023FD7B /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7773F9191DBCC20200D4B5AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,7 +271,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		77090DC71E2829020023FD7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77090DB81E2829020023FD7B /* AlphexNotificationContent */;
+			targetProxy = 77090DC61E2829020023FD7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		77090DC21E2829020023FD7B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77090DC31E2829020023FD7B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		7773F9261DBCC20300D4B5AA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -184,6 +307,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		77090DC91E2829020023FD7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48386QZ38R;
+				INFOPLIST_FILE = AlphexNotificationContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.alphex.Alphex.AlphexNotificationContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		77090DCA1E2829020023FD7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 48386QZ38R;
+				INFOPLIST_FILE = AlphexNotificationContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.alphex.Alphex.AlphexNotificationContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		7773F92F1DBCC20300D4B5AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -280,6 +431,7 @@
 		7773F9321DBCC20300D4B5AA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 48386QZ38R;
 				INFOPLIST_FILE = Alphex/Info.plist;
@@ -293,6 +445,7 @@
 		7773F9331DBCC20300D4B5AA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 48386QZ38R;
 				INFOPLIST_FILE = Alphex/Info.plist;
@@ -306,6 +459,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		77090DCB1E2829020023FD7B /* Build configuration list for PBXNativeTarget "AlphexNotificationContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77090DC91E2829020023FD7B /* Debug */,
+				77090DCA1E2829020023FD7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7773F9181DBCC20200D4B5AA /* Build configuration list for PBXProject "Alphex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

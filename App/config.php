@@ -1,5 +1,5 @@
 <?php
-$live = false;
+$live = true;
 
 if ($live)
 {

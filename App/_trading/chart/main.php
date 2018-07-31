@@ -1,5 +1,5 @@
 <div id="price_chart"></div>
-<script type="text/javascript" src="https://cdn.cryptowat.ch/assets/build/scripts/dist/embed.js"></script>
+<script type="text/javascript" src="https://static.cryptowat.ch/assets/scripts/embed.bundle.js"></script>
 <script>
   var pair = "<?=htmlspecialchars($coin_2)?><?=htmlspecialchars($coin_1)?>";
 

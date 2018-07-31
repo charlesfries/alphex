@@ -3,7 +3,7 @@ require("global.php");
 $title = "Terms of Use - Alphex";
 $tab = "";
 
-include("templates/head.php");
+include("templates/header.php");
 ?>
 <div class="container pb-0">
   <br>

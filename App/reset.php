@@ -26,6 +26,11 @@ include("templates/header.php");
         </fieldset>
       </form>
     </div>
+    <div class="col-4">
+      <h4 class="fancy">Forgot your password?</h4>
+      <hr class="mt-0">
+      <p>You can use this form to reset it.<br><br>Once submitted, you will receive an email with further instructions.</p>
+    </div>
   </div>
 </div>
 <?php
